@@ -65,7 +65,7 @@ function pageOn(){
     $('#main-menu').addClass('main-menu-pgactive');
     $('#section-home').addClass('section-vcardbody-pgactive');
     $('.profileActive').removeClass('profileActive');
-    $('#profile2').addClass('profileActive');
+    $('#profile').addClass('profileActive');
 
     linkHome = 1;
 }
@@ -75,7 +75,7 @@ function pageOff(){
     $('#main-menu').removeClass('main-menu-pgactive');
     $('#section-home').removeClass('section-vcardbody-pgactive');
     $('.profileActive').removeClass('profileActive');
-    $('#profile1').addClass('profileActive');
+    $('#profile').addClass('profileActive');
     linkHome = 0;
 }
 
