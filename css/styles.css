@@ -77,6 +77,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+li{
+    font-family: 'Montserrat', sans-serif;
+}
 /* ==========================================================
 ! 03. Buttons
 ========================================================== */
