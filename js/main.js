@@ -133,7 +133,7 @@ $(".loadPost").on('click', function(event){
 //   $("#contactSuccess").dialog();
 // });
 
-if (window.location.hash === "#openmodal") {
+if (window.location.hash === "#thanks") {
     $("#contactSuccess").dialog();
 }
 //   $("#contactForm").validate({
