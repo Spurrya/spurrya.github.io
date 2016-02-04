@@ -631,9 +631,9 @@
               <div class="form-group">
                 <textarea class="form-control required" name="body" placeholder="Message"></textarea>
               </div>
-              <input type="hidden" name="_next" value="/thanks.html" />
+              <input type="hidden" name="_next" value="" />
               <input type="hidden" name="_subject" value="New submission!" />
-              <input type="submit" class="btn btn-default form-send" value="Send">
+              <input type="submit" id="submittedForm" class="btn btn-default form-send" value="Send">
               </form>
 			</div>
 		</div>
@@ -646,7 +646,7 @@
 
 <!-- Contact Form - Ajax Messages
 ========================================================= -->
-<!-- <div class="form-result modal-wrap" id="contactSuccess">
+<div class="form-result modal-wrap" id="contactSuccess">
   <div class="modal-bg"></div>
   <div class="modal-content">
     <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
@@ -654,7 +654,7 @@
   </div>
 </div>
 
-<div class="form-result modal-wrap" id="contactError">
+<!--<div class="form-result modal-wrap" id="contactError">
   <div class="modal-bg"></div>
   <div class="modal-content">
     <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
