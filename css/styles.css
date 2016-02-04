@@ -81,6 +81,13 @@ body {
 li{
     font-family: 'Montserrat', sans-serif;
 }
+
+.skill-padding{
+  padding: 20px;
+}
+p{
+  padding: 8px;
+}
 /* ==========================================================
 ! 03. Buttons
 ========================================================== */
