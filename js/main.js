@@ -129,10 +129,13 @@ $(".loadPost").on('click', function(event){
 
 //==============___Contact Form Validator and Ajax Sender___================
 
-$("#submittedForm").click(function(){
-  $("#contactSuccess").dialog();
-});
+// $("#submittedForm").click(function(){
+//   $("#contactSuccess").dialog();
+// });
 
+if (window.location.hash === "#openmodal") {
+    $("#contactSuccess").dialog();
+}
 //   $("#contactForm").validate({
 //     submitHandler: function(form) {
 //       $.ajax({
