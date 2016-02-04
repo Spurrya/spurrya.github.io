@@ -70,7 +70,7 @@
 				<li><a href="#page-skills" class="link-page">Skills</a></li>
 				<li><a href="#page-portfolio" class="link-page">Portfolio</a></li>
 				<li><a href="#page-blog" class="link-page">Blog</a></li>
-				<!-- <li><a href="#page-contact" class="link-page">Contact</a></li> -->
+				<li><a href="#page-contact" class="link-page">Contact</a></li>
 			</ul>
 		</div>
 		<!-- /MAIN MENU -->
@@ -591,7 +591,7 @@
           <div class="blog-item">
             <div class="blog-item-wrapper">
               <div class="blog-item-thumb">
-                <a href="http://protectidentite.blogspot.ca/2014/02/mobile-phones-are-one-of-most-popular.html" class="loadPost"><img src="img/blog/security.jpg"></a>
+                <a href="http://protectidentite.blogspot.ca/2014/02/mobile-phones-are-one-of-most-popular.html" class="loadPost"><img src="img/blog/secur.jpg"></a>
               </div>
               <div class="blog-item-infos">
                 <div class="blog-item-title-wrapper">
@@ -617,11 +617,11 @@
 		<!-- /SECTION: BLOG SINGLE  -->
 
 		<!-- SECTION: CONTACT-->
-		<!-- <div class="section-vcardbody section-page" id="page-contact">
+		<div class="section-vcardbody section-page" id="page-contact">
 			<div class="section-contact">
 	            <h2 class="section-title">Contact</h2>
 	            <h4 class="contact-subtitle-1"><i class="fa fa-paper-plane-o"></i>&nbsp; Send Me a Message</h4>
-		          <form id="contactForm" method="post" class="form">
+		          <!-- <form id="contactForm" method="post" class="form">
 		            <div class="form-group">
 		            	<input class="form-control required" id="name" name="name" placeholder="Name" type="text" required />
 		            </div>
@@ -637,9 +637,23 @@
 		            <div class="form-group">
 		            	<input type="submit" class="btn btn-default form-send" value="Send!">
 		            </div>
-		          </form>
+		          </form> -->
+
+              <!--Incase you read comment section, with formspree YOU DONT NEED YOUR OWN SERVER to run PHP script! -->
+
+              <form action="http://formspree.io/spurrya@gmail.com" class="form" method="POST">
+              <div class="form-group">
+                <input  class="form-control required" placeholder="Email"  type="email" name="_replyto">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control required" name="body" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" class="btn btn-default form-send" value="Send">
+              </form>
 			</div>
-		</div> -->
+		</div>
+
+
 		<!-- /SECTION: CONTACT  -->
 	</div>
 
@@ -701,7 +715,19 @@
   <script src="vendor/html5shiv.js"></script>
   <script src="vendor/respond.min.js"></script>
 <![endif]-->
-<!-- >> /JS
+
 ============================================================================= -->
 </body>
 </html>
+
+<!-- Adding google analytics hope it works! -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73268765-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
