@@ -4,8 +4,6 @@
 
 //Begin - Window Load
 $(window).load(function(){
-
-
 	//==============___Page Loader___================
 
   $('#page-loader').delay(300).fadeOut(400, function(){
@@ -104,73 +102,53 @@ $(".link-home").on('click', function(event){
   }
 });
 
-//==============___Blog - Ajax___================
-// function loadPost(){
-//    $.ajax({
-//       url: 'single.html', // URL HERE
-//       type: 'GET',
-//       success: function(html) {
-//
-//         var $lis = $(html).find('#blogPost'); // Loads the content inside #blogPost div
-//
-//         $("#postHere").html($lis);
-//     }
-//   });
-// }
-//
 // $(".loadPost").on('click', function(event){
 //   event.preventDefault();
-//   //$("#postHere").html('loading...');
 //   $('.section-page-active').removeClass('section-page-active');
 //   $('#page-blog-single').addClass('section-page-active');
 //   pageOn();
-//   loadPost();
 // });
 
 //==============___Contact Form Validator and Ajax Sender___================
 
-//   $("#contactForm").validate({
-//     submitHandler: function(form) {
-//       $.ajax({
-//         type: "POST",
-//         url: "php/contact-form.php",
-//         data: {
-//           "name": $("#contactForm #name").val(),
-//           "email": $("#contactForm #email").val(),
-//           "subject": $("#contactForm #subject").val(),
-//           "message": $("#contactForm #message").val()
-//         },
-//         dataType: "json",
-//         success: function (data) {
-//           if (data.response == "success") {
-//             $("#contactSuccess").fadeIn(300);
-//             $("#contactError").addClass("hidden");
-//
-//             $("#contactForm #name, #contactForm #email, #contactForm #subject, #contactForm #message")
-//               .val("")
-//               .blur()
-//               .closest(".control-group")
-//               .removeClass("success")
-//               .removeClass("error");
-//
-//           } else {
-//             $("#contactError").fadeIn(300);
-//             $("#contactSuccess").addClass("hidden");
-//           }
-//         }
-//
-//       });
-//     }
-//   });
-//
-//
-// //Modal for Contact Form
-// $('.modal-wrap').click(function(){
-//   $('.modal-wrap').fadeOut(300);
-// });
+  // $("#contactForm").validate({
+  //   submitHandler: function(form) {
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "php/contact-form.php",
+  //       data: {
+  //         "name": $("#page-contact #name").val(),
+  //         "email": $("#page-contact #email").val(),
+  //         "message": $("#page-contact #message").val()
+  //       },
+  //       dataType: "json",
+  //       success: function (data) {
+  //         if (data.response == "success") {
+  //           $("#contactSuccess").fadeIn(300);
+  //           $("#contactError").addClass("hidden");
+  //
+  //           $("#contactForm #name, #contactForm #email, #contactForm #message")
+  //             .val("")
+  //             .blur()
+  //             .closest(".control-group")
+  //             .removeClass("success")
+  //             .removeClass("error");
+  //
+  //         } else {
+  //           $("#contactError").fadeIn(300);
+  //           $("#contactSuccess").addClass("hidden");
+  //         }
+  //       }
+  //
+  //     });
+  //   }
+  // });
 
-//End - Document Ready
+
+//Modal for Contact Form
+$('.modal-wrap').click(function(){
+  $('.modal-wrap').fadeOut(300);
 });
 
-//End - Use Strict mode
+});
 })(jQuery);
