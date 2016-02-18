@@ -81,7 +81,7 @@ function pageOff(){
 
 
 $(".link-page").on('click', function(event){
-  event.preventDefault();
+ // event.preventDefault();
   $('.menuActive').removeClass('menuActive');
   $(this).addClass('menuActive');
   linkPage = $(this).attr('href');
@@ -92,7 +92,7 @@ $(".link-page").on('click', function(event){
 
 
 $(".link-home").on('click', function(event){
-  event.preventDefault();
+ // event.preventDefault();
 
   if (linkHome == 0) {
     //pageOn();
