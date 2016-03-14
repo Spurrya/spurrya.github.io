@@ -725,14 +725,13 @@ iframe {
   color: #333;
   padding-left: 0;
   margin-left: 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   margin: 0;
   margin-bottom: 8px;
   letter-spacing: -1px;
   border-bottom: 1px dotted #021533;
   padding-bottom: 5px;
-  font-size: 15px;
 }
 .graduation-time,
 .job {
